@@ -1,4 +1,5 @@
 import bpy
+import bpy_extras
 
 class MYADDON_OT_export_scene(bpy.types.Operator,bpy_extras.io_utils.ExportHelper):
     bl_idname = "myaddon.myaddon_ot_export_scene"
