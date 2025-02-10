@@ -1,5 +1,5 @@
 import bpy
-
+from .add_collider import MYADDON_OT_add_collider
     
 class OBJECT_PT_collider(bpy.types.Panel):
     """"オブジェクトのファイルネームパネル"""
