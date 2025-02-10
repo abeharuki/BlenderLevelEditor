@@ -11,6 +11,7 @@ from .export_scene import MYADDON_OT_export_scene
 from .disabled import MYADDON_OT_add_disabled
 from .disabled import OBJECT_PT_disabled
 from .spawn import MYADDON_OT_load_spawn_object
+from .spawn import MYADDON_OT_make_spawn_object
 
 #ブレンダーに登録するアドオン情報
 bl_info = {
@@ -38,6 +39,7 @@ OBJECT_PT_collider,
 MYADDON_OT_add_disabled,
 OBJECT_PT_disabled,
 MYADDON_OT_load_spawn_object,
+MYADDON_OT_make_spawn_object,
 )
 
 

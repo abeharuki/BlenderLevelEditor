@@ -2,7 +2,7 @@ import bpy
 from .create_ico_sphere import MYADDON_OT_create_ico_sphere
 from .export_scene import MYADDON_OT_export_scene
 from .stretch_vertex import MYADDON_OT_stretch_vertex
-from .spawn import MYADDON_OT_load_spawn_object
+from .spawn import MYADDON_OT_make_spawn_object
 
 class TOPBAR_MT_my_menu(bpy.types.Menu):
     bl_idname = "TOPBAR_MT_my_menu"
@@ -13,7 +13,7 @@ class TOPBAR_MT_my_menu(bpy.types.Menu):
         self.layout.operator(MYADDON_OT_stretch_vertex.bl_idname,text = MYADDON_OT_stretch_vertex.bl_label)
         self.layout.operator(MYADDON_OT_create_ico_sphere.bl_idname,text = MYADDON_OT_create_ico_sphere.bl_label)
         self.layout.operator(MYADDON_OT_export_scene.bl_idname,text = MYADDON_OT_export_scene.bl_label)
-        self.layout.operator(MYADDON_OT_load_spawn_object.bl_idname,text = MYADDON_OT_load_spawn_object.bl_label)
+        self.layout.operator(MYADDON_OT_make_spawn_object.bl_idname,text = MYADDON_OT_make_spawn_object.bl_label)
         #self.layout.operator(MYADDON_OT_add_filename.bl_idname,text = MYADDON_OT_add_filename.bl_label)
       
         
