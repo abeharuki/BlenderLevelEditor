@@ -2,13 +2,14 @@ import bpy
 from .my_menu import TOPBAR_MT_my_menu
 from .stretch_vertex import MYADDON_OT_stretch_vertex
 from .create_ico_sphere import MYADDON_OT_create_ico_sphere
-from .add_filename import MYADDON_OT_add_filename
+from .file_name import MYADDON_OT_add_filename
 from .file_name import OBJECT_PT_file_name
-from .add_collider import MYADDON_OT_add_collider
+from .collider import MYADDON_OT_add_collider
 from .collider import OBJECT_PT_collider
 from .draw_collider import DrawCollider
 from .export_scene import MYADDON_OT_export_scene
-
+from .disabled import MYADDON_OT_add_disabled
+from .disabled import OBJECT_PT_disabled
 
 #ブレンダーに登録するアドオン情報
 bl_info = {
@@ -33,6 +34,8 @@ MYADDON_OT_add_filename,
 OBJECT_PT_file_name,
 MYADDON_OT_add_collider,
 OBJECT_PT_collider,
+MYADDON_OT_add_disabled,
+OBJECT_PT_disabled,
 )
 
 
