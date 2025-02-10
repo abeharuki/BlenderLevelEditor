@@ -1,12 +1,12 @@
 import bpy
 from .my_menu import TOPBAR_MT_my_menu
 from .stretch_vertex import MYADDON_OT_stretch_vertex
-from .file_name import OBJECT_PT_file_name
-from .add_filename import MYADDON_OT_add_filename
-from .collider import OBJECT_PT_collider
 from .create_ico_sphere import MYADDON_OT_create_ico_sphere
-from .draw_collider import DrawCollider
+from .add_filename import MYADDON_OT_add_filename
+from .file_name import OBJECT_PT_file_name
 from .add_collider import MYADDON_OT_add_collider
+from .collider import OBJECT_PT_collider
+from .draw_collider import DrawCollider
 from .export_scene import MYADDON_OT_export_scene
 
 
