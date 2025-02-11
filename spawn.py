@@ -72,7 +72,7 @@ class MYADDON_OT_make_spawn_object(bpy.types.Operator):
         # 重複防止
         spawn_object = bpy.data.objects.get(SpawnNames.names[self.type][SpawnNames.PROTOTYPE])
         if spawn_object is None:
-            bpy.ops.myaddon_ot_load_spawn_object('EXEC_DEFAULT')
+            bpy.ops.myaddon.myaddon_ot_load_spawn_object('EXEC_DEFAULT')
             #再検索
             spawn_object = bpy.data.objects.get(SpawnNames.names[self.type][SpawnNames.PROTOTYPE])
 
