@@ -26,7 +26,7 @@ class MYADDON_OT_load_spawn_object(bpy.types.Operator):
         # 重複防止
         spawn_object = bpy.data.objects.get(SpawnNames.names[type][SpawnNames.PROTOTYPE])
         if spawn_object is not None:
-            return {'CANCELLED'}
+           return {'CANCELLED'}
 
         addon_directory = os.path.dirname(__file__)
         relative_path = SpawnNames.names[type][SpawnNames.FILENAME]
@@ -84,7 +84,7 @@ class MYADDON_OT_make_spawn_object(bpy.types.Operator):
         #オブジェクトを現在のシーンにリンク
         bpy.context.collection.objects.link(object)
         #オブジェクトの名を変更
-        object.name = SpawnNames.names[self.type][SpawnNames.PROTOTYPE]
+        object.name = SpawnNames.names[self.type][SpawnNames.INSTANCE]
        
         # 最後に 'FINISHED' を返す
         return {'FINISHED'}
